@@ -1,0 +1,130 @@
+###
+GET http://localhost:4000/api/employees
+
+###
+GET http://localhost:4000/api/employees/61ac47f69925d7fe935e93a9
+
+###
+POST http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+    "name": "Kevin",
+    "lastname": "Changoluisa",
+    "position": "qwe"
+}
+
+###
+DELETE  http://localhost:4000/api/employees/Kevin
+
+
+###
+PUT http://localhost:4000/api/employees/61ac47f69925d7fe935e93a9
+Content-Type: application/json
+
+{
+    "name": "Kevin Andre"
+
+}
+
+
+
+###
+POST http://localhost:4000/api/registerUser
+Content-Type: application/json
+
+{
+  "name": "Kevin",
+  "lastname": "changoluisa",
+  "email": "kchangoluisa@hotmail.com",
+  "birth_date": "1993-10-20",
+  "phone": "0999039732",
+  "gender": "masculino",
+  "estatura": 180,
+  "peso":55,
+  "password": "1718123563",
+  "rol": 555,
+  "state":"activo"
+}
+
+
+###
+POST http://localhost:4000/api/registerUser
+Content-Type: application/json
+
+{
+  "name": "Cecibel",
+  "lastname": "Castillo",
+  "email": "j@hotmail.a",
+  "birth_date": "1999-02-18",
+  "phone": "0998327795",
+  "gender": "femenino",
+  "estatura": 155,
+  "peso":100,
+  "password": "123456789",
+  "rol": 333,
+  "state":"activo"
+}
+
+
+###
+POST http://localhost:4000/api/loginUser
+Content-Type: application/json
+
+{
+  "email": "kchangoluisa@hotmail.com",
+  "password": "1718123563"
+}
+
+
+###
+GET http://localhost:4000/api/getUsers
+
+
+###
+POST http://localhost:4000/api/exercises/addExercise
+Content-Type: application/json
+
+{
+  "id_User": "61ad026ca625c5cfa8976f50",
+  "type": "Pecho",
+  "name": "Press banca inclinado barra, aperturas en polea, press de pectorales",
+  "repetition": 12,
+  "series": 4
+}
+
+
+###
+GET http://localhost:4000/api/getUser/61afa5311198b0418760715a
+
+
+###
+GET http://localhost:4000/api/exercise/all
+
+
+###
+GET http://localhost:4000/api/exercises/getExercisesUser/61ad026ca625c5cfa8976f50
+
+
+###
+DELETE  http://localhost:4000/api/exercises/61af36c045f274ff24f7a6fb
+
+
+###
+PUT http://localhost:4000/api/updateUser/61afa5311198b0418760715a
+Content-Type: application/json
+
+{
+  "name": "Johanna",
+  "lastname": "Valdez",
+  "email": "j@hotmail.com",
+  "birth_date": "1999-02-18",
+  "phone": "0998327795",
+  "gender": "femenino",
+  "estatura": 155,
+  "peso":100,
+  "password": "123456789",
+  "rol": 333,
+  "state":"activo"
+}
+
