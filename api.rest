@@ -63,7 +63,7 @@ Content-Type: application/json
   "peso":100,
   "password": "123456789",
   "rol": 333,
-  "state":"activo"
+  "state":"inactivo"
 }
 
 
