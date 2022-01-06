@@ -9,6 +9,8 @@ router.get("/getExercisesUser/:id", exerciseUserCtrl.getAllExerciseXuser);
 
 router.delete("/:id", exerciseUserCtrl.deleteExerciseXuser);
 
+router.put("/updateExerciseXuser/:id", exerciseUserCtrl.updateExerciseXuser);
+
 
 module.exports = router;
 

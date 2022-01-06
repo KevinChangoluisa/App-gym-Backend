@@ -9,6 +9,9 @@ router.get("/getFoodsUser/:id", foodUserCtrl.getAllFoodXuser);
 
 router.delete("/:id", foodUserCtrl.deleteFoodXuser);
 
+router.put("/updateFoodXuser/:id", foodUserCtrl.updateFoodXuser);
+
+
 
 module.exports = router;
 
