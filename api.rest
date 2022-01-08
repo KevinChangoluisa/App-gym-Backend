@@ -42,6 +42,8 @@ Content-Type: application/json
   "gender": "masculino",
   "estatura": 180,
   "peso":55,
+  "enfermedad":" ",
+  "detalleEnfermedad":" ",
   "password": "1718123563",
   "rol": 555,
   "state":"activo"
@@ -128,3 +130,10 @@ Content-Type: application/json
   "state":"activo"
 }
 
+###
+PUT http://localhost:4000/api/payment/updateStateUserPayment/61d70916eb49eb1d88a7f915 
+Content-Type: application/json
+
+{
+  "state":"sin verificar"
+}

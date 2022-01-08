@@ -1,5 +1,5 @@
 const { Schema } = require("mongoose");
-const { database } = require("../database");
+const { database } = require("../../database");
 
 const userSchema = new Schema(
   {
@@ -11,6 +11,8 @@ const userSchema = new Schema(
     gender: { type: String, required: true },
     estatura: { type: Number, required: true },
     peso: { type: Number, required: true },
+    enfermedad: { type: String, required: true },
+    detalleEnfermedad: { type: String, required: true },
     password: { type: String, required: true },
     rol: { type: Number, required: true },
     state: { type: String },
@@ -22,3 +24,4 @@ const userSchema = new Schema(
 );
 
 module.exports = database.model("Users", userSchema);
+ 

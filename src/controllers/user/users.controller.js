@@ -1,5 +1,5 @@
 const userCtrl = {};
-const User = require("../models/User");
+const User = require("../../models/user/User");
 const jwt = require("jsonwebtoken");
 let bcrypt = require("bcrypt");
 
@@ -111,22 +111,4 @@ userCtrl.getUserState = async (req, res) => {
   res.send(user);
 }
 
-
-/*
-
-employeeCtrl.getEmployee = async (req, res) => {
-  const employee = await Employee.findOne({ _id: req.params.id });
-  res.send(employee);
-};
-
-employeeCtrl.updateEmployee = async (req, res) => {
-  await Employee.findByIdAndUpdate(req.params.id, req.body);
-  res.json({ status: "Employee updated" });
-};
-
-employeeCtrl.deleteEmployee = async (req, res) => {
-  await Employee.findByIdAndDelete(req.params.id);
-  res.json({ status: "Employee deleted" });
-};
-*/
 module.exports = userCtrl;

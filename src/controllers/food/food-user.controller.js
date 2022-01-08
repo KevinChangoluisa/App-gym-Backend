@@ -22,7 +22,6 @@ foodUserCtrl.deleteFoodXuser = async (req, res) => {
 
 foodUserCtrl.updateFoodXuser = async (req, res) => {
 
-  console.log("algo");
   const estatus = await FoodUser.findByIdAndUpdate(req.params.id,req.body)
   if (estatus !== null) {
     res.json({
