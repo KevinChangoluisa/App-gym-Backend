@@ -1,34 +1,4 @@
-###
-GET http://localhost:4000/api/employees
-
-###
-GET http://localhost:4000/api/employees/61ac47f69925d7fe935e93a9
-
-###
-POST http://localhost:4000/api/employees
-Content-Type: application/json
-
-{
-    "name": "Kevin",
-    "lastname": "Changoluisa",
-    "position": "qwe"
-}
-
-###
-DELETE  http://localhost:4000/api/employees/Kevin
-
-
-###
-PUT http://localhost:4000/api/employees/61ac47f69925d7fe935e93a9
-Content-Type: application/json
-
-{
-    "name": "Kevin Andre"
-
-}
-
-
-
+/* Este primer comando te crea el usuario admin en la base de datos mongo*/
 ###
 POST http://localhost:4000/api/registerUser
 Content-Type: application/json
