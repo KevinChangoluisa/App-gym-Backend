@@ -22,44 +22,40 @@ createExercises = async (req, res) => {
     const ejercicios = [
       {
         type: "Pecho",
-        name: {
-          0: "Press banca inclinado barra",
-          1: "Aperturas en polea",
-          3: "Press de pectorales",
-        },
+        name: [
+          "Press banca inclinado barra",
+          "Aperturas en polea",
+          "Press de pectorales",
+        ],
       },
       {
         type: "Espalda",
-        name: {
-          1: "Curl inclinado con mancuernas",
-          2: "Dominas",
-          3: "Jalon tras nuca, pull over",
-        },
+        name: [
+          "Curl inclinado con mancuernas",
+          "Dominas",
+          "Jalon tras nuca, pull over",
+        ],
       },
       {
         type: "Pierna",
-        name: {
-          1: "Sentadillas",
-          2: "Maquina eliptica",
-          3: "Peso muerto con barra",
-        },
+        name: ["Sentadillas", "Maquina eliptica", "Peso muerto con barra"],
       },
       {
         type: "Brazos",
-        name: {
-          1: "Press arnold",
-          2: "Encogimientos con mancuernas",
-          3: "Curl con barra",
-        },
+        name: [
+          "Press arnold",
+          "Encogimientos con mancuernas",
+          "Curl con barra",
+        ],
       },
       {
         type: "Abs",
-        name: {
-          1: "crunch manos al pecho",
-          2: "Crunch inverso",
-          3: "Elevacion de piernas",
-          4: "Rodillas al pecho con fitball",
-        },
+        name: [
+          "crunch manos al pecho",
+          "Crunch inverso",
+          "Elevacion de piernas",
+          "Rodillas al pecho con fitball",
+        ],
       },
     ];
     const momentoComida = ejercicios.map(function (ejercicio) {

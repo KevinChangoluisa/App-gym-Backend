@@ -18,5 +18,7 @@ router.put("/updateUserState/:id", usersCtrl.updateUserState);
 
 router.get("/getUserState/:id", usersCtrl.getUserState);
 
+router.delete("/deleteUser/:id", usersCtrl.deleteUser);
+
 
 module.exports = router;

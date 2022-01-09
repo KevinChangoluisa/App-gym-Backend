@@ -86,13 +86,12 @@ userCtrl.updateUser = async (req, res) => {
 };
 
 userCtrl.updateUserState = async (req, res) => {
-
   const estatus = await User.findByIdAndUpdate(req.params.id, req.body);
 
   if (estatus !== null) {
     res.json({
       status: 201,
-      message: "Datos actualizados satisfactoriamente"
+      message: "Datos actualizados satisfactoriamente",
     });
   } else {
     res.json({
@@ -101,14 +100,27 @@ userCtrl.updateUserState = async (req, res) => {
         "Error al momento de actualziar, revise que los campos esten ingresados correctamente, o vuelva a intentarlo mas tarde",
     });
   }
-
 };
 
 userCtrl.getUserState = async (req, res) => {
-  const user = await User.findOne({ _id: req.params.id }).select([
-    "state"
-  ]);
+  const user = await User.findOne({ _id: req.params.id }).select(["state"]);
   res.send(user);
-}
+};
+
+userCtrl.deleteUser = async (req, res) => {
+  const estatus = await User.findByIdAndDelete(req.params.id);
+
+  if (estatus !== null) {
+    res.json({
+      status: 201,
+      message: "Usuario eliminado satisfactoriamente",
+    });
+  } else {
+    res.json({
+      status: 400,
+      message: "Error al momento de eliminar, vuelva a intentarlo mas tarde",
+    });
+  }
+};
 
 module.exports = userCtrl;
