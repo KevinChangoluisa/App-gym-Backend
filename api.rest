@@ -15,7 +15,7 @@ Content-Type: application/json
   "enfermedad":" ",
   "detalleEnfermedad":" ",
   "password": "1718123563",
-  "rol": 555,
+  "rol": 333,
   "state":"activo"
 }
 

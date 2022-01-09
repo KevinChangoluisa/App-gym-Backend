@@ -6,6 +6,7 @@ const foodUserSchema = new Schema(
     id_User: { type: String, required: true },
     day: { type: String, required: true },
     type: { type: String, required: true },
+    timefood: { type: String, required: true },
     name: { type: String, required: true },
     quantity: { type: Number, required: true },
     unity: { type: String, required: true },

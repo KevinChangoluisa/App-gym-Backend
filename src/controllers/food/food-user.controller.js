@@ -2,10 +2,12 @@ const foodUserCtrl = {};
 const FoodUser = require("../../models/food/Food-user");
 
 foodUserCtrl.createFoodXuser = async (req, res) => {
+  console.log(req.body);
   const newFood = new FoodUser(req.body);
   await newFood.save();
   res.json({ status: 201, message: "Alimentacion añadida con exito" });
 };
+
 
 foodUserCtrl.getAllFoodXuser = async (req, res) => {
   const user = await FoodUser.find({ id_User: req.params.id }).select([
